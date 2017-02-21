@@ -12,5 +12,5 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MON
   && echo "deb http://download.mono-project.com/repo/debian wheezy-apache24-compat main" | tee -a /etc/apt/sources.list.d/mono-xamarin.list \
   && echo "deb http://download.mono-project.com/repo/debian wheezy-libjpeg62-compat main" | tee -a /etc/apt/sources.list.d/mono-xamarin.list \
   && apt-get update \
-  && apt-get install -y binutils mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl git wget \
+  && apt-get install -y binutils mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl git wget libunwind8 gettext \
 && rm -rf /var/lib/apt/lists/* /tmp/*
